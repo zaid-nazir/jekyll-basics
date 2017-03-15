@@ -4,10 +4,13 @@ layout: default
   
   <h1>In the News Page</h1>
   <ul>
-     {% for news in site.posts %}
+     {% for news in site.posts.recently-discovered %}
   	<li>
-  	    <a href=""> {{news.title}}</a>
+  	    <a href="{{site.baseurl}}{{news.url}}"> {{news.title}}</a>
   		<p>{{news.meta}}</p>
-  		{% endfor %}
-  	</li>
+  	</li>	
+  	{% endfor %}
+  	
   </ul>
+
+

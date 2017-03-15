@@ -5,15 +5,18 @@
 	<title>Planets of the univese</title>
 </head>
 <body>
- <header>Planets of the Universe</header>
+ <header>
+          <h1>Planets of the Universe</h1>
+ </header>
 
-{% include nav.html navclass='nav-top'%}
+{% include nav.html navclass='-top'%}
 
 {{content}}
 
 <footer>
-	 ©2017 Planets of the univerese
-	 {% include nav.html navclass='nav-bottom' %}
+     {% include nav.html navclass='-bottom' %}
+	  ©2017 Planets of the univerese
+	
 </footer>
 </body>
 </html>
